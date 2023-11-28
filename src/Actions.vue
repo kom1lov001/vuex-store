@@ -31,18 +31,41 @@ this.$store.commit('counterUpdated',val)
 
 </style>
 -->
-<template>
+<!--<template>
   <div>
-    <button @click="addtocount">add to count</button>
-    <button @click="taketocount">take to count</button>
+    <button class="btn btn-info" @click="updateCounter(1) ">add to count</button>
+    <button class="btn btn-danger" @click="updateCounter(-1)">take to count</button>
   </div>
 </template>
 <script>
 export default{
 data(){
-  return{
-
+},
+methods:{
+  updateCounter(bool){
+   this.$emit("counterUpdate",bool)
   }
 }
 }
 </script>
+-->
+<template>
+  <div class="align-center d-flex justify-content-center mt-5 ">
+<button class="btn btn-success mr-3" @click="updateCounter(1)">success</button>
+<button class="btn btn-danger" @click="updateCounter(-1)">Danger</button>
+  </div>
+</template>
+<script>
+export default {
+methods:{
+  updateCounter(count){
+    // this.$emit("counterUpdate",count)
+    // this.$store.state.counter += count
+    this.$store.state.counter += count
+  }
+}
+}
+</script>
+<style>
+
+</style>

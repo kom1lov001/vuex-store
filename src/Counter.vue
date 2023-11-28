@@ -28,7 +28,7 @@ return this.$store.getters.counterCounter
 
 </style>
 -->
-<template>
+<!--<template>
   <div>
     <h1>
       Counter:{{ counter }}
@@ -39,12 +39,37 @@ return this.$store.getters.counterCounter
 </template>
 <script>
 export default{
-data(){
-  return{
-    counter:0
-  }
+  props:['counter']
+// data(){
+//   return{
+//     counter:0
+//   }
 
-}
+// }
 }
 </script>
 <style scoped></style>
+-->
+<template>
+  <div class="text-center mt-5">
+<h2>Counter: {{ counter }}</h2>
+  </div>
+</template>
+<script>
+export default {
+// props:["counter"],
+// computed:{
+//   counter(){
+//     return this.$store.state.counter
+//   }
+// }
+computed:{
+  counter(){
+    return this.$store.state.counter
+  }
+}
+}
+</script>
+<style>
+
+</style>
