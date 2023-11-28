@@ -36,7 +36,25 @@ import  Vue  from "vue";
 import Vuex from 'Vuex'
 Vue.use(Vuex)
 export default new Vuex.Store({
-state:{
-  counter:5
-}
+  state:{
+    counter:0
+  },
+  mutations:{
+    changeCounter(state){
+return state.counter += 1
+    }
+  },
+  getters:{
+    computedCounter(state){
+      return state.counter * 11
+    }
+  }
+// state:{
+//   counter:0
+// },
+// getters:{
+//   computedCounter(state){
+// return state.counter * 11
+//   }
+// }
 })

@@ -1,4 +1,4 @@
-<template>
+<!--<template>
   <div>
     <h1>Second Counter:{{ counter }}</h1>
   </div>
@@ -15,3 +15,27 @@ computed:{
 <style>
 
 </style>
+-->
+<template>
+  <div>
+    <h2>Second: {{ counter }}</h2>
+  </div>
+</template>
+<script>
+export default{
+  // computed:{
+  //   counters(){
+  //     return this.$store.getters.computedCounter
+  //   }
+  // }
+computed:{
+ counter(){
+    return this.$store.getters.computedCounter
+  },
+  // num(){
+  //   return this.$storre.state.num
+  // }
+}
+}
+</script>
+<style scoped></style>

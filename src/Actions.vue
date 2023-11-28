@@ -57,10 +57,13 @@ methods:{
 </template>
 <script>
 export default {
+// methods:{
+//   updateCounter(count){
+//     this.$store.state.counter += count
+//   }
+// }
 methods:{
   updateCounter(count){
-    // this.$emit("counterUpdate",count)
-    // this.$store.state.counter += count
     this.$store.state.counter += count
   }
 }
