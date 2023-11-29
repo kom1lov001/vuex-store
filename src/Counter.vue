@@ -63,6 +63,9 @@ export default {
 //   }
 // }
 computed:{
+  // counter(){
+  //   return this.$store.getters.computedCounter
+  // }
   counter(){
     return this.$store.getters.computedCounter
   }

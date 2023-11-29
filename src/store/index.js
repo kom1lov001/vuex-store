@@ -39,16 +39,24 @@ export default new Vuex.Store({
   state:{
     counter:0
   },
-  mutations:{
-    changeCounter(state){
-return state.counter += 1
-    }
-  },
+//   mutations:{
+//     changeCounter(state){
+// return state.counter += 1
+//     }
+  // },
   getters:{
     computedCounter(state){
       return state.counter * 11
+    },
+//     computeCounter(state){
+// return state.counter * (-11)
+//     }
+  },
+  mutations:{
+    changeCounter(state,payload){
+      return state.counter += payload
     }
-  }
+  },
 // state:{
 //   counter:0
 // },

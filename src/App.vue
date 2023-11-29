@@ -50,9 +50,10 @@ export default {
 -->
 <template>
   <div class="container text-center">
-    <div class="">
+    <div>
       <counterCounter></counterCounter>
       <SecondComponentvue></SecondComponentvue>
+      <hr>
     <counterActions></counterActions>
     </div>
   </div>
@@ -62,11 +63,11 @@ import Counter from './Counter.vue'
 import Actions from './Actions.vue'
 import Second from './SecondComponent.vue'
 export default {
-  data(){
-    return{
-      counter:0
-    }
-  },
+  // data(){
+  //   return{
+  //     counter:0
+  //   }
+  // },
 components:{
   counterCounter:Counter,
   counterActions:Actions,

@@ -63,8 +63,9 @@ export default {
 //   }
 // }
 methods:{
-  updateCounter(count){
-    this.$store.state.counter += count
+  updateCounter(value){
+    // this.$store.state.counter += value
+    this.$store.commit('changeCounter',value)
   }
 }
 }

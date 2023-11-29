@@ -29,12 +29,9 @@ export default{
   //   }
   // }
 computed:{
- counter(){
+  counter(){
     return this.$store.getters.computedCounter
-  },
-  // num(){
-  //   return this.$storre.state.num
-  // }
+  }
 }
 }
 </script>
